@@ -11,6 +11,7 @@ const swaggerFile = require('./swagger_output.json')
 dotenv.config();
 
 //se requiere para entender los datos recibidos en JSON
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
