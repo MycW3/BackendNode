@@ -29,6 +29,6 @@ const errorHandler = require('./middlewares/errorhandler');
 app.use(errorHandler);
 
 //Inicia el servidor web en el puerto SERVER_PORT
-app.listen(process.env.SERVER_PORT, () => {
-    console.log(` Aplicación de ejemplo escuchando en el puerto ${process.env.SERVER_PORT}`)
-})
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Aplicación de ejemplo escuchando en el puerto ${process.env.PORT || 3000}`);
+});
